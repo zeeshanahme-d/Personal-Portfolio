@@ -18,9 +18,6 @@
   color: #f13024;
 }
 
-body {
-  --webkit-tap-highlight-color: 'transparent';
-}
 
 @layer base {
   body {
