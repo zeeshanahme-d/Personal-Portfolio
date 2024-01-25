@@ -92,7 +92,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div id="about" className=" py-8 text-center xl:text-left relative">
+    <div id="about" className=" py-20 text-center xl:text-left relative">
 
       {/* circle */}
       <div className="w-[200px] xl:w-[300px] absolute -right-16 bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10 overflow-hidden">

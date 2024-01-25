@@ -12,9 +12,9 @@ const lobster = Lobster({
   weight: ['400'],
 })
 
-export  const metadata = {
-  title: 'Zeeshan Ahmed | Web Developer',
-  description: 'Front-End Developer',
+export const metadata = {
+  title: 'Zeeshan Ahmed',
+  description: 'Front-End Web Developer',
 };
 
 

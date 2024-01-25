@@ -8,19 +8,19 @@ import {
   HiEnvelope,
 } from 'react-icons/hi2';
 
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 // import { useRouter } from 'next/router';
 
 
 // nav data
 export const navData = [
-  { name: 'home', path: '/#home', icon: <HiHome /> },
-  { name: 'about', path: '/#about', icon: <HiUser /> },
-  { name: 'services', path: '/#services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/#work', icon: <HiViewColumns /> },
+  { name: 'home', path: 'home', icon: <HiHome /> },
+  { name: 'about', path: 'about', icon: <HiUser /> },
+  { name: 'services', path: 'services', icon: <HiRectangleGroup /> },
+  { name: 'work', path: 'work', icon: <HiViewColumns /> },
   {
     name: 'contact',
-    path: '/#contact',
+    path: 'contact',
     icon: <HiEnvelope />,
   },
 ];
@@ -40,7 +40,11 @@ const Nav = () => {
 
         {navData.map((link, index) => {
           return <Link
-            href={link.path}
+            activeClass="active"
+            to={link.path}
+            spy={true}
+            smooth={true}
+            duration={500} F
             key={index}
             className="relative flex item-center group hover:text-accent transition-all duration-300">
             {/* tooltip */}

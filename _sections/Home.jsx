@@ -3,7 +3,7 @@ import ParticlesContainer from "@/_components/ParticlesContainer";
 import ProjectsBtn from "@/_components/ProjectsBtn";
 
 import { motion } from "framer-motion";
-import fadeIn from "../utils/variants"
+import fadeIn from "../utils/variants";
 
 
 
@@ -11,7 +11,7 @@ import fadeIn from "../utils/variants"
 const Home = () => {
 
   return (
-    <div id="home" className="h-auto bg-primary/30 py-[5rem] lg:py-[2rem]  relative">
+    <div id="home" className="h-auto md:h-screen bg-primary/30  py-[5rem] md:py-[10rem] lg:py-[3rem]  relative">
       {/* text */}
       <div className="w-full h-full">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
